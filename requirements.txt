@@ -1,0 +1,8 @@
+pandas
+numpy==1.21.6
+ta-lib
+boto3
+psycopg2-binary
+apache-flink==1.17.1
+
+

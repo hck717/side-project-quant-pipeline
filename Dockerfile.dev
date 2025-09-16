@@ -1,0 +1,33 @@
+# Dev container for Quant Pipeline
+# Python 3.10 (matches PyFlink 1.17.x supported versions)
+FROM python:3.10-slim-bookworm
+
+# Install system dependencies (Java 17 instead of 11)
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpq-dev \
+    curl \
+    unzip \
+    openjdk-17-jdk \
+    maven \
+    postgresql-client \
+ && rm -rf /var/lib/apt/lists/*
+
+# Set JAVA_HOME for Java 17 on ARM64
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-arm64
+ENV PATH="${JAVA_HOME}/bin:${PATH}"
+
+# Copy Python requirements
+COPY requirements.txt /tmp/requirements.txt
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+# Install CLI tools
+RUN pip install awscli \
+ && curl -LO https://dl.min.io/client/mc/release/linux-amd64/mc \
+ && chmod +x mc && mv mc /usr/local/bin/
+
+# Set working directory
+WORKDIR /workspace
+

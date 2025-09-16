@@ -1,0 +1,12 @@
+{
+  "name": "Quant Pipeline Dev",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace",
+  "extensions": [
+    "ms-python.python",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode-remote.remote-containers",
+    "redhat.vscode-yaml"
+  ]
+}
