@@ -1,0 +1,15 @@
+KAFKA_BROKER = "redpanda:9092"
+
+TOPIC_CRYPTO = "crypto.ticks"
+TOPIC_EQUITIES_INTRADAY = "equities.intraday"
+
+MINIO_ENDPOINT = "minio:9000"
+MINIO_ACCESS_KEY = "minio"
+MINIO_SECRET_KEY = "minio123"
+MINIO_SECURE = False
+MINIO_BUCKET = "quant"
+
+CRYPTO_SYMBOLS = ["BTC-USD", "ETH-USD", "SOL-USD", "ADA-USD", "XRP-USD"]
+EQUITIES_INTRADAY = ["AAPL", "MSFT", "AMZN", "TSLA", "NVDA"]
+EQUITIES_EOD = ["AAPL", "MSFT", "AMZN", "TSLA", "NVDA", "JPM", "XOM", "META", "GOOGL", "NFLX"]
+BONDS = ["^TNX", "^IRX", "^FVX", "^TYX"]
