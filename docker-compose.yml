@@ -34,13 +34,13 @@ services:
       - minio_data:/data
 
   airflow-init:
-    image: apache/airflow:2.8.1
+    image: apache/airflow:2.8.1-python3.10
     container_name: airflow-init
     entrypoint: /bin/bash
     command:
       - -c
       - |
-        pip install --no-cache-dir -r /requirements.txt &&
+        pip install --no-cache-dir -r /requirements-airflow.txt &&
         airflow db init &&
         airflow users create \
           --username admin \
@@ -51,7 +51,7 @@ services:
           --email admin@example.com
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
-      - AIRFLOW__CORE__FERNET_KEY=<TodoNkIoEsZVIw05ELY4d32Wr_4luOSBIQbnrtpr-H8=>
+      - AIRFLOW__CORE__FERNET_KEY=<fBsAQZV2YG1eRTPUGgL6sUqnd1X36BjclAXzSoJcyNs=>
       - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=false
       - AIRFLOW__CORE__LOAD_EXAMPLES=false
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
@@ -60,16 +60,16 @@ services:
       - ./dags:/opt/airflow/dags
       - ./scripts:/opt/airflow/scripts
       - ./logs:/opt/airflow/logs
-      - ./requirements.txt:/requirements.txt
+      - ./requirements-airflow.txt:/requirements-airflow.txt
     depends_on:
       - postgres
 
   airflow:
-    image: apache/airflow:2.8.1
+    image: apache/airflow:2.8.1-python3.10
     container_name: airflow
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
-      - AIRFLOW__CORE__FERNET_KEY=<TodoNkIoEsZVIw05ELY4d32Wr_4luOSBIQbnrtpr-H8=>
+      - AIRFLOW__CORE__FERNET_KEY=<fBsAQZV2YG1eRTPUGgL6sUqnd1X36BjclAXzSoJcyNs=>
       - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=false
       - AIRFLOW__CORE__LOAD_EXAMPLES=false
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
@@ -78,16 +78,55 @@ services:
       - ./dags:/opt/airflow/dags
       - ./scripts:/opt/airflow/scripts
       - ./logs:/opt/airflow/logs
-      - ./requirements.txt:/requirements.txt
+      - ./requirements-airflow.txt:/requirements-airflow.txt
     ports:
       - "8080:8080"
     depends_on:
       - postgres
       - redpanda
       - minio
-    command: >
-      bash -c "pip install --no-cache-dir -r /requirements.txt &&
-               airflow webserver & airflow scheduler"
+    command:
+      - bash
+      - -c
+      - |
+        pip install --no-cache-dir -r /requirements-airflow.txt &&
+        airflow webserver & airflow scheduler
+
+  flink-jobmanager:
+    image: flink:1.17.1-scala_2.12
+    container_name: flink-jobmanager
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: flink-jobmanager
+    ports:
+      - "8082:8081"
+    volumes:
+      - ./requirements-flink.txt:/requirements-flink.txt
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        pip install --no-cache-dir -r /requirements-flink.txt || true
+        /docker-entrypoint.sh jobmanager
+
+  flink-taskmanager:
+    image: flink:1.17.1-scala_2.12
+    container_name: flink-taskmanager
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: flink-jobmanager
+    depends_on:
+      - flink-jobmanager
+    volumes:
+      - ./requirements-flink.txt:/requirements-flink.txt
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        pip install --no-cache-dir -r /requirements-flink.txt || true
+        /docker-entrypoint.sh taskmanager
 
 volumes:
   postgres_data:
