@@ -2,22 +2,6 @@ version: "3.9"
 
 services:
   airflow:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - .:/workspace
-    networks:
-      - quantnet
-    depends_on:
-      - minio
-      - redpanda
-      - flink-jobmanager
-      - postgres
-    stdin_open: true
-    tty: true
-
-  airflow:
     image: apache/airflow:2.8.1
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
@@ -88,28 +72,6 @@ services:
       - JOB_MANAGER_RPC_ADDRESS=flink-jobmanager
     ports:
       - "8082:8081"
-    networks:
-      - quantnet
-
-  flink-taskmanager:
-    image: flink:1.17.1-scala_2.12
-    command: taskmanager
-    environment:
-      - JOB_MANAGER_RPC_ADDRESS=flink-jobmanager
-    depends_on:
-      - flink-jobmanager
-    networks:
-      - quantnet
-
-  minio:
-    image: minio/minio
-    command: server /data --console-address ":9001"
-    environment:
-      - MINIO_ROOT_USER=minio
-      - MINIO_ROOT_PASSWORD=minio123
-    ports:
-      - "9000:9000"
-      - "9001:9001"
     networks:
       - quantnet
 
