@@ -1,0 +1,322 @@
+[2025-09-17T01:58:04.926+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T01:58:04.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T01:58:04.929+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:58:04.929+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T01:58:04.936+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:58:04.934+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T01:58:04.937+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T01:58:05.063+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.151 seconds
+[2025-09-17T01:58:35.888+0000] {processor.py:161} INFO - Started process (PID=223) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T01:58:35.890+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T01:58:35.891+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:58:35.891+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T01:58:35.899+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:58:35.897+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T01:58:35.900+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T01:58:35.951+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.072 seconds
+[2025-09-17T01:59:07.625+0000] {processor.py:161} INFO - Started process (PID=251) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T01:59:07.629+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T01:59:07.632+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:59:07.631+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T01:59:07.642+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:59:07.639+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T01:59:07.644+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T01:59:07.770+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.159 seconds
+[2025-09-17T01:59:38.897+0000] {processor.py:161} INFO - Started process (PID=276) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T01:59:38.901+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T01:59:38.903+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:59:38.902+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T01:59:38.926+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:59:38.918+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T01:59:38.927+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T01:59:39.047+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.162 seconds
+[2025-09-17T02:00:09.774+0000] {processor.py:161} INFO - Started process (PID=301) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:00:09.780+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:00:09.786+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:00:09.785+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:00:09.823+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:00:09.815+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:00:09.829+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:00:09.957+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.210 seconds
+[2025-09-17T02:04:09.175+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:04:09.178+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:04:09.181+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:04:09.181+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:04:09.206+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:04:09.200+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:04:09.207+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:04:09.287+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.126 seconds
+[2025-09-17T02:04:41.187+0000] {processor.py:161} INFO - Started process (PID=223) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:04:41.192+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:04:41.198+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:04:41.195+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:04:41.231+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:04:41.223+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:04:41.233+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:04:41.459+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.332 seconds
+[2025-09-17T02:05:12.409+0000] {processor.py:161} INFO - Started process (PID=249) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:05:12.417+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:05:12.422+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:05:12.421+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:05:12.464+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:05:12.459+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:05:12.465+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:05:12.775+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.376 seconds
+[2025-09-17T02:05:43.551+0000] {processor.py:161} INFO - Started process (PID=274) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:05:43.554+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:05:43.555+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:05:43.555+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:05:43.567+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:05:43.564+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:05:43.568+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:05:43.602+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.056 seconds
+[2025-09-17T02:06:14.546+0000] {processor.py:161} INFO - Started process (PID=299) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:06:14.549+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:06:14.551+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:06:14.550+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:06:14.563+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:06:14.560+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:06:14.563+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:06:14.612+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.081 seconds
+[2025-09-17T02:06:45.153+0000] {processor.py:161} INFO - Started process (PID=324) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:06:45.157+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:06:45.162+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:06:45.159+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:06:45.189+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:06:45.184+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:06:45.190+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:06:45.275+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.133 seconds
+[2025-09-17T02:07:16.163+0000] {processor.py:161} INFO - Started process (PID=349) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:07:16.172+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:07:16.174+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:07:16.174+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:07:16.205+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:07:16.195+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:07:16.208+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:07:16.316+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.167 seconds
+[2025-09-17T02:07:46.919+0000] {processor.py:161} INFO - Started process (PID=384) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:07:46.921+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:07:46.923+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:07:46.923+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:07:46.934+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:07:46.930+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:07:46.934+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:07:47.078+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.166 seconds
+[2025-09-17T02:08:17.868+0000] {processor.py:161} INFO - Started process (PID=409) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:08:17.871+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:08:17.873+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:08:17.873+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:08:17.884+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:08:17.882+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:08:17.886+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:08:17.933+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.071 seconds
+[2025-09-17T02:08:50.845+0000] {processor.py:161} INFO - Started process (PID=432) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:08:50.866+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:08:50.872+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:08:50.870+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:08:50.935+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:08:50.913+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:08:50.944+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:08:52.926+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 2.108 seconds
+[2025-09-17T02:09:23.384+0000] {processor.py:161} INFO - Started process (PID=459) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:09:23.390+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:09:23.394+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:09:23.393+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:09:23.452+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:09:23.446+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:09:23.453+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:09:23.724+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.382 seconds
+[2025-09-17T02:09:54.025+0000] {processor.py:161} INFO - Started process (PID=485) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:09:54.028+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:09:54.031+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:09:54.030+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:09:54.048+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:09:54.044+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:09:54.049+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:09:54.116+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.107 seconds
+[2025-09-17T02:10:24.306+0000] {processor.py:161} INFO - Started process (PID=527) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:10:24.308+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:10:24.310+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:10:24.309+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:10:24.319+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:10:24.318+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:10:24.320+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:10:24.355+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.057 seconds
+[2025-09-17T02:10:55.141+0000] {processor.py:161} INFO - Started process (PID=567) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:10:55.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:10:55.143+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:10:55.143+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:10:55.148+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:10:55.147+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:10:55.148+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:10:55.175+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.040 seconds
+[2025-09-17T02:11:40.477+0000] {processor.py:161} INFO - Started process (PID=199) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:11:40.481+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:11:40.485+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:11:40.482+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:11:40.513+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:11:40.509+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:11:40.514+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:11:40.708+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.245 seconds
+[2025-09-17T02:12:10.872+0000] {processor.py:161} INFO - Started process (PID=224) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:12:10.874+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:12:10.877+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:12:10.875+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:12:10.886+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:12:10.884+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:12:10.888+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:12:10.976+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.114 seconds
+[2025-09-17T02:12:43.056+0000] {processor.py:161} INFO - Started process (PID=247) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:12:43.061+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:12:43.066+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:12:43.064+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:12:43.108+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:12:43.098+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:12:43.109+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:12:43.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.187 seconds
+[2025-09-17T02:13:14.425+0000] {processor.py:161} INFO - Started process (PID=272) to work on /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:13:14.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crypto_stream_dag.py for tasks to queue
+[2025-09-17T02:13:14.442+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:13:14.440+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:13:14.472+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:13:14.463+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/crypto_stream_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/crypto_stream_dag.py", line 4, in <module>
+    from scripts.crypto_producer import run_crypto_tick_producer
+ModuleNotFoundError: No module named 'scripts.crypto_producer'
+[2025-09-17T02:13:14.473+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/crypto_stream_dag.py
+[2025-09-17T02:13:14.646+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crypto_stream_dag.py took 0.240 seconds

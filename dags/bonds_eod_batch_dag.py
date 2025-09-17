@@ -1,19 +1,19 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
-from scripts.crypto_producer import run_crypto_tick_producer
+from scripts.bonds_eod_writer import run_bonds_eod_writer
 
 default_args = {"owner": "ho", "retries": 0}
 
 with DAG(
-    dag_id="crypto_stream_dag",
+    dag_id="bonds_eod_batch_dag",
     default_args=default_args,
     start_date=datetime(2025, 9, 17),
-    schedule_interval="* * * * *",  # every minute
+    schedule_interval="0 22 * * *",  # daily at 10 PM
     catchup=False,
 ) as dag:
 
-    stream_crypto = PythonOperator(
-        task_id="stream_crypto_ticks",
-        python_callable=run_crypto_tick_producer
+    batch_bonds_eod = PythonOperator(
+        task_id="batch_bonds_eod",
+        python_callable=run_bonds_eod_writer
     )

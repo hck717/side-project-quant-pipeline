@@ -1,0 +1,322 @@
+[2025-09-17T01:58:04.462+0000] {processor.py:161} INFO - Started process (PID=170) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T01:58:04.469+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T01:58:04.474+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:58:04.472+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T01:58:04.506+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:58:04.499+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T01:58:04.508+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T01:58:04.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.221 seconds
+[2025-09-17T01:58:35.633+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T01:58:35.635+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T01:58:35.640+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:58:35.639+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T01:58:35.655+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:58:35.653+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T01:58:35.657+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T01:58:35.758+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.142 seconds
+[2025-09-17T01:59:06.956+0000] {processor.py:161} INFO - Started process (PID=236) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T01:59:06.964+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T01:59:06.973+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:59:06.971+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T01:59:07.004+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:59:06.998+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T01:59:07.007+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T01:59:07.213+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.298 seconds
+[2025-09-17T01:59:38.164+0000] {processor.py:161} INFO - Started process (PID=261) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T01:59:38.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T01:59:38.182+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:59:38.178+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T01:59:38.240+0000] {logging_mixin.py:188} INFO - [2025-09-17T01:59:38.222+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T01:59:38.242+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T01:59:38.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.292 seconds
+[2025-09-17T02:00:09.046+0000] {processor.py:161} INFO - Started process (PID=286) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:00:09.094+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:00:09.104+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:00:09.101+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:00:09.149+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:00:09.144+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:00:09.153+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:00:09.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.338 seconds
+[2025-09-17T02:04:08.840+0000] {processor.py:161} INFO - Started process (PID=170) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:04:08.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:04:08.852+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:04:08.850+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:04:08.882+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:04:08.874+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:04:08.884+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:04:08.994+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.179 seconds
+[2025-09-17T02:04:39.998+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:04:40.001+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:04:40.004+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:04:40.002+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:04:40.036+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:04:40.033+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:04:40.038+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:04:40.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.194 seconds
+[2025-09-17T02:05:11.228+0000] {processor.py:161} INFO - Started process (PID=234) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:05:11.247+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:05:11.269+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:05:11.264+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:05:11.628+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:05:11.602+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:05:11.630+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:05:11.835+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.841 seconds
+[2025-09-17T02:05:42.366+0000] {processor.py:161} INFO - Started process (PID=259) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:05:42.368+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:05:42.370+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:05:42.370+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:05:42.387+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:05:42.382+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:05:42.388+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:05:42.449+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.094 seconds
+[2025-09-17T02:06:13.308+0000] {processor.py:161} INFO - Started process (PID=284) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:06:13.313+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:06:13.316+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:06:13.315+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:06:13.330+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:06:13.325+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:06:13.331+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:06:13.442+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.156 seconds
+[2025-09-17T02:06:43.890+0000] {processor.py:161} INFO - Started process (PID=309) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:06:43.894+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:06:43.896+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:06:43.895+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:06:43.921+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:06:43.912+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:06:43.924+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:06:44.029+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.157 seconds
+[2025-09-17T02:07:15.464+0000] {processor.py:161} INFO - Started process (PID=334) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:07:15.472+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:07:15.482+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:07:15.478+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:07:15.536+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:07:15.512+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:07:15.543+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:07:15.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.348 seconds
+[2025-09-17T02:07:46.523+0000] {processor.py:161} INFO - Started process (PID=369) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:07:46.531+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:07:46.537+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:07:46.534+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:07:46.589+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:07:46.584+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:07:46.591+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:07:46.728+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.245 seconds
+[2025-09-17T02:08:17.614+0000] {processor.py:161} INFO - Started process (PID=394) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:08:17.616+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:08:17.618+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:08:17.617+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:08:17.633+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:08:17.630+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:08:17.633+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:08:17.696+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.098 seconds
+[2025-09-17T02:08:48.218+0000] {processor.py:161} INFO - Started process (PID=419) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:08:48.232+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:08:48.286+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:08:48.252+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:08:48.450+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:08:48.440+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:08:48.461+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:08:48.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.420 seconds
+[2025-09-17T02:09:20.602+0000] {processor.py:161} INFO - Started process (PID=449) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:09:20.621+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:09:20.627+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:09:20.625+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:09:20.658+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:09:20.652+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:09:20.659+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:09:20.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.400 seconds
+[2025-09-17T02:09:51.343+0000] {processor.py:161} INFO - Started process (PID=474) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:09:51.346+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:09:51.349+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:09:51.348+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:09:52.412+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:09:52.297+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:09:52.419+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:09:52.832+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 1.493 seconds
+[2025-09-17T02:10:22.998+0000] {processor.py:161} INFO - Started process (PID=517) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:10:23.006+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:10:23.016+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:10:23.013+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:10:23.046+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:10:23.040+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:10:23.048+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:10:23.156+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.176 seconds
+[2025-09-17T02:10:53.962+0000] {processor.py:161} INFO - Started process (PID=552) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:10:53.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:10:53.973+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:10:53.971+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:10:54.012+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:10:54.007+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:10:54.013+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:10:54.085+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.150 seconds
+[2025-09-17T02:11:40.078+0000] {processor.py:161} INFO - Started process (PID=184) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:11:40.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:11:40.087+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:11:40.086+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:11:40.114+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:11:40.108+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:11:40.115+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:11:40.213+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.178 seconds
+[2025-09-17T02:12:10.475+0000] {processor.py:161} INFO - Started process (PID=209) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:12:10.480+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:12:10.486+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:12:10.485+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:12:10.513+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:12:10.506+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:12:10.514+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:12:10.617+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.180 seconds
+[2025-09-17T02:12:42.308+0000] {processor.py:161} INFO - Started process (PID=234) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:12:42.380+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:12:42.402+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:12:42.399+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:12:42.623+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:12:42.572+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:12:42.674+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:12:42.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 1.404 seconds
+[2025-09-17T02:13:13.891+0000] {processor.py:161} INFO - Started process (PID=259) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:13:13.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T02:13:13.911+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:13:13.907+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:13:13.983+0000] {logging_mixin.py:188} INFO - [2025-09-17T02:13:13.976+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/bonds_eod_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bonds_eod_batch_dag.py", line 4, in <module>
+    from scripts.bonds_eod_writer import run_bonds_eod_writer
+ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
+[2025-09-17T02:13:13.995+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T02:13:14.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 0.290 seconds

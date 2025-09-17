@@ -1,0 +1,293 @@
+[2025-09-17T01:58:04.112+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-09-17T01:58:04.113+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-09-17T01:58:04.114+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-09-17T01:58:04.115+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-09-17T01:58:04.203+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-17T01:58:04.624+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/bonds_eod_batch_dag.py             170  0.23s             0           0
+/opt/airflow/dags/equities_intraday_stream_dag.py    173  0.20s             0           0
+/opt/airflow/dags/crypto_stream_dag.py                                      0           0
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           0
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           0
+================================================================================
+[2025-09-17T01:58:35.610+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py             208  0.05s             0           1  0.33s           2025-09-17T01:58:04
+/opt/airflow/dags/equities_intraday_stream_dag.py    210  0.01s             0           1  0.26s           2025-09-17T01:58:04
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.19s           2025-09-17T01:58:05
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.20s           2025-09-17T01:58:04
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.20s           2025-09-17T01:58:05
+================================================================================
+[2025-09-17T01:59:05.705+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  0.22s           2025-09-17T01:58:35
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.18s           2025-09-17T01:58:35
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.13s           2025-09-17T01:58:35
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.07s           2025-09-17T01:58:35
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.16s           2025-09-17T01:58:36
+================================================================================
+[2025-09-17T01:59:35.975+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  0.52s           2025-09-17T01:59:07
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.36s           2025-09-17T01:59:07
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.26s           2025-09-17T01:59:07
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.22s           2025-09-17T01:59:07
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.23s           2025-09-17T01:59:07
+================================================================================
+[2025-09-17T02:00:06.593+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  0.46s           2025-09-17T01:59:38
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.35s           2025-09-17T01:59:38
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.25s           2025-09-17T01:59:39
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.35s           2025-09-17T01:59:38
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.26s           2025-09-17T01:59:39
+================================================================================
+[2025-09-17T02:04:08.506+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-09-17T02:04:08.507+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-09-17T02:04:08.513+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-09-17T02:04:08.514+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-09-17T02:04:08.571+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-17T02:04:08.969+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/bonds_eod_batch_dag.py             170  0.17s             0           0
+/opt/airflow/dags/equities_intraday_stream_dag.py    173  0.16s             0           0
+/opt/airflow/dags/crypto_stream_dag.py                                      0           0
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           0
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           0
+================================================================================
+[2025-09-17T02:04:39.961+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py             208  0.07s             0           1  0.23s           2025-09-17T02:04:09
+/opt/airflow/dags/equities_intraday_stream_dag.py    211  0.01s             0           1  0.23s           2025-09-17T02:04:09
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.19s           2025-09-17T02:04:09
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.09s           2025-09-17T02:04:09
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.17s           2025-09-17T02:04:09
+================================================================================
+[2025-09-17T02:05:10.798+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py             234  0.28s             0           1  0.30s           2025-09-17T02:04:40
+/opt/airflow/dags/equities_intraday_stream_dag.py    237  0.05s             0           1  0.26s           2025-09-17T02:04:40
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.45s           2025-09-17T02:04:41
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.91s           2025-09-17T02:04:41
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.66s           2025-09-17T02:04:41
+================================================================================
+[2025-09-17T02:05:41.288+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  1.43s           2025-09-17T02:05:11
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  1.20s           2025-09-17T02:05:11
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.64s           2025-09-17T02:05:12
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.31s           2025-09-17T02:05:12
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.87s           2025-09-17T02:05:13
+================================================================================
+[2025-09-17T02:06:12.188+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  0.19s           2025-09-17T02:05:42
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.14s           2025-09-17T02:05:42
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.09s           2025-09-17T02:05:43
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.08s           2025-09-17T02:05:42
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.08s           2025-09-17T02:05:43
+================================================================================
+[2025-09-17T02:06:42.682+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  0.26s           2025-09-17T02:06:13
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.23s           2025-09-17T02:06:13
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.12s           2025-09-17T02:06:14
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.11s           2025-09-17T02:06:13
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.10s           2025-09-17T02:06:14
+================================================================================
+[2025-09-17T02:07:13.746+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  0.29s           2025-09-17T02:06:44
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.21s           2025-09-17T02:06:44
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.22s           2025-09-17T02:06:45
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.14s           2025-09-17T02:06:44
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.18s           2025-09-17T02:06:45
+================================================================================
+[2025-09-17T02:07:44.312+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  0.58s           2025-09-17T02:07:15
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.45s           2025-09-17T02:07:15
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.25s           2025-09-17T02:07:16
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.27s           2025-09-17T02:07:16
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.26s           2025-09-17T02:07:16
+================================================================================
+[2025-09-17T02:08:14.508+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  0.38s           2025-09-17T02:07:46
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.32s           2025-09-17T02:07:46
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.21s           2025-09-17T02:07:47
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.12s           2025-09-17T02:07:46
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.23s           2025-09-17T02:07:47
+================================================================================
+[2025-09-17T02:08:44.598+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  0.16s           2025-09-17T02:08:17
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.13s           2025-09-17T02:08:17
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.14s           2025-09-17T02:08:17
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.09s           2025-09-17T02:08:17
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.15s           2025-09-17T02:08:17
+================================================================================
+[2025-09-17T02:09:08.527+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-09-17T02:09:08.558+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-17T02:09:14.782+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  2.29s           2025-09-17T02:08:50
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.60s           2025-09-17T02:08:48
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  2.45s           2025-09-17T02:08:53
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.80s           2025-09-17T02:08:51
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  1.52s           2025-09-17T02:08:53
+================================================================================
+[2025-09-17T02:09:47.115+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  0.63s           2025-09-17T02:09:21
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.40s           2025-09-17T02:09:19
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.54s           2025-09-17T02:09:23
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.54s           2025-09-17T02:09:21
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.66s           2025-09-17T02:09:24
+================================================================================
+[2025-09-17T02:10:18.148+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  1.56s           2025-09-17T02:09:52
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.92s           2025-09-17T02:09:51
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.19s           2025-09-17T02:09:54
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.41s           2025-09-17T02:09:53
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.11s           2025-09-17T02:09:55
+================================================================================
+[2025-09-17T02:10:48.725+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  0.25s           2025-09-17T02:10:23
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  0.51s           2025-09-17T02:10:22
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.12s           2025-09-17T02:10:24
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.12s           2025-09-17T02:10:23
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.99s           2025-09-17T02:10:26
+================================================================================
+[2025-09-17T02:11:39.613+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-09-17T02:11:39.618+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-09-17T02:11:39.619+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-09-17T02:11:39.620+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-09-17T02:11:39.781+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-17T02:11:40.193+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/bonds_eod_batch_dag.py             184  0.19s             0           0
+/opt/airflow/dags/equities_intraday_stream_dag.py    187  0.14s             0           0
+/opt/airflow/dags/crypto_stream_dag.py                                      0           0
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           0
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           0
+================================================================================
+[2025-09-17T02:12:10.437+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py             209  0.08s             0           1  0.27s           2025-09-17T02:11:40
+/opt/airflow/dags/equities_intraday_stream_dag.py    212  0.02s             0           1  0.21s           2025-09-17T02:11:40
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.39s           2025-09-17T02:11:40
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.15s           2025-09-17T02:11:40
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.40s           2025-09-17T02:11:40
+================================================================================
+[2025-09-17T02:12:41.502+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py             234  0.26s             0           1  0.29s           2025-09-17T02:12:10
+/opt/airflow/dags/equities_intraday_stream_dag.py    237  0.10s             0           1  0.23s           2025-09-17T02:12:10
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.16s           2025-09-17T02:12:10
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.18s           2025-09-17T02:12:10
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.16s           2025-09-17T02:12:11
+================================================================================
+[2025-09-17T02:13:12.527+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/bonds_eod_batch_dag.py                                    0           1  1.79s           2025-09-17T02:12:42
+/opt/airflow/dags/equities_intraday_stream_dag.py                           0           1  1.63s           2025-09-17T02:12:42
+/opt/airflow/dags/crypto_stream_dag.py                                      0           1  0.29s           2025-09-17T02:12:43
+/opt/airflow/dags/equities_eod_batch_dag.py                                 0           1  0.29s           2025-09-17T02:12:43
+/opt/airflow/dags/full_pipeline_test_dag.py                                 0           1  0.32s           2025-09-17T02:12:43
+================================================================================
