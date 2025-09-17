@@ -905,3 +905,45 @@ ModuleNotFoundError: No module named 'scripts.equities_intraday_producer'
 [2025-09-17T05:40:57.113+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:40:57.109+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-09-17T05:40:57.236+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:40:57.235+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_intraday_stream_dag to 2025-09-17 05:35:00+00:00, run_after=2025-09-17 05:40:00+00:00
 [2025-09-17T05:40:57.336+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_intraday_stream_dag.py took 16.440 seconds
+[2025-09-17T05:43:14.091+0000] {processor.py:161} INFO - Started process (PID=842) to work on /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:43:14.103+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_intraday_stream_dag.py for tasks to queue
+[2025-09-17T05:43:14.111+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:43:14.108+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:43:26.662+0000] {processor.py:840} INFO - DAG(s) 'equities_intraday_stream_dag' retrieved from /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:43:26.961+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:43:26.958+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:43:27.177+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:43:27.176+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_intraday_stream_dag to 2025-09-17 05:35:00+00:00, run_after=2025-09-17 05:40:00+00:00
+[2025-09-17T05:43:27.283+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_intraday_stream_dag.py took 13.232 seconds
+[2025-09-17T05:43:58.080+0000] {processor.py:161} INFO - Started process (PID=872) to work on /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:43:58.091+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_intraday_stream_dag.py for tasks to queue
+[2025-09-17T05:43:58.100+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:43:58.097+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:44:05.487+0000] {processor.py:840} INFO - DAG(s) 'equities_intraday_stream_dag' retrieved from /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:44:05.796+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:05.792+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:44:06.052+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:06.050+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_intraday_stream_dag to 2025-09-17 05:35:00+00:00, run_after=2025-09-17 05:40:00+00:00
+[2025-09-17T05:44:06.227+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_intraday_stream_dag.py took 8.203 seconds
+[2025-09-17T05:44:36.948+0000] {processor.py:161} INFO - Started process (PID=902) to work on /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:44:36.962+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_intraday_stream_dag.py for tasks to queue
+[2025-09-17T05:44:36.974+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:36.973+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:44:39.229+0000] {processor.py:840} INFO - DAG(s) 'equities_intraday_stream_dag' retrieved from /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:44:39.303+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:39.301+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:44:39.350+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:39.350+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_intraday_stream_dag to 2025-09-17 05:35:00+00:00, run_after=2025-09-17 05:40:00+00:00
+[2025-09-17T05:44:39.400+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_intraday_stream_dag.py took 2.522 seconds
+[2025-09-17T05:45:10.861+0000] {processor.py:161} INFO - Started process (PID=932) to work on /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:45:11.052+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_intraday_stream_dag.py for tasks to queue
+[2025-09-17T05:45:11.133+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:45:11.114+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:45:31.990+0000] {processor.py:840} INFO - DAG(s) 'equities_intraday_stream_dag' retrieved from /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:45:32.231+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:45:32.229+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:45:32.396+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:45:32.394+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_intraday_stream_dag to 2025-09-17 05:40:00+00:00, run_after=2025-09-17 05:45:00+00:00
+[2025-09-17T05:45:32.474+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_intraday_stream_dag.py took 21.822 seconds
+[2025-09-17T05:46:02.828+0000] {processor.py:161} INFO - Started process (PID=971) to work on /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:46:02.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_intraday_stream_dag.py for tasks to queue
+[2025-09-17T05:46:02.834+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:02.833+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:46:14.742+0000] {processor.py:840} INFO - DAG(s) 'equities_intraday_stream_dag' retrieved from /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:46:15.062+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:15.060+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:46:15.196+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:15.195+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_intraday_stream_dag to 2025-09-17 05:40:00+00:00, run_after=2025-09-17 05:45:00+00:00
+[2025-09-17T05:46:15.331+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_intraday_stream_dag.py took 12.555 seconds
+[2025-09-17T05:46:45.913+0000] {processor.py:161} INFO - Started process (PID=1001) to work on /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:46:45.918+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_intraday_stream_dag.py for tasks to queue
+[2025-09-17T05:46:45.921+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:45.920+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:46:58.227+0000] {processor.py:840} INFO - DAG(s) 'equities_intraday_stream_dag' retrieved from /opt/airflow/dags/equities_intraday_stream_dag.py
+[2025-09-17T05:46:58.536+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:58.533+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:46:58.773+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:58.773+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_intraday_stream_dag to 2025-09-17 05:40:00+00:00, run_after=2025-09-17 05:45:00+00:00
+[2025-09-17T05:46:58.874+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_intraday_stream_dag.py took 12.984 seconds

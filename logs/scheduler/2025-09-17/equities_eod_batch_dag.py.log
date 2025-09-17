@@ -891,3 +891,52 @@ ModuleNotFoundError: No module named 'scripts.equities_eod_writer'
 [2025-09-17T05:41:09.529+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:41:09.526+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-09-17T05:41:09.645+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:41:09.645+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
 [2025-09-17T05:41:09.710+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_eod_batch_dag.py took 7.385 seconds
+[2025-09-17T05:42:51.977+0000] {processor.py:161} INFO - Started process (PID=830) to work on /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:42:51.999+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:42:52.003+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:42:52.002+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:42:57.260+0000] {processor.py:840} INFO - DAG(s) 'equities_eod_batch_dag' retrieved from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:42:57.407+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:42:57.406+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:42:57.464+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:42:57.463+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:42:57.523+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_eod_batch_dag.py took 5.580 seconds
+[2025-09-17T05:43:27.791+0000] {processor.py:161} INFO - Started process (PID=857) to work on /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:43:27.826+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:43:27.832+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:43:27.830+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:43:32.633+0000] {processor.py:840} INFO - DAG(s) 'equities_eod_batch_dag' retrieved from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:43:33.178+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:43:33.174+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:43:33.306+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:43:33.305+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:43:33.403+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_eod_batch_dag.py took 5.649 seconds
+[2025-09-17T05:44:06.769+0000] {processor.py:161} INFO - Started process (PID=887) to work on /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:44:06.774+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:44:06.780+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:06.778+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:44:15.431+0000] {processor.py:840} INFO - DAG(s) 'equities_eod_batch_dag' retrieved from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:44:15.569+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:15.568+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:44:15.622+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:15.622+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:44:15.749+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_eod_batch_dag.py took 9.047 seconds
+[2025-09-17T05:44:46.092+0000] {processor.py:161} INFO - Started process (PID=917) to work on /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:44:46.099+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:44:46.105+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:46.104+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:44:53.513+0000] {processor.py:840} INFO - DAG(s) 'equities_eod_batch_dag' retrieved from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:44:53.762+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:53.760+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:44:53.909+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:53.908+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:44:54.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_eod_batch_dag.py took 7.956 seconds
+[2025-09-17T05:45:34.948+0000] {processor.py:161} INFO - Started process (PID=959) to work on /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:45:34.955+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:45:34.957+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:45:34.957+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:45:43.400+0000] {processor.py:840} INFO - DAG(s) 'equities_eod_batch_dag' retrieved from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:45:43.662+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:45:43.659+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:45:43.806+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:45:43.805+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:45:43.875+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_eod_batch_dag.py took 8.951 seconds
+[2025-09-17T05:46:23.724+0000] {processor.py:161} INFO - Started process (PID=991) to work on /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:46:23.733+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:46:23.739+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:23.737+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:46:26.934+0000] {processor.py:840} INFO - DAG(s) 'equities_eod_batch_dag' retrieved from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:46:27.044+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:27.042+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:46:27.094+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:27.093+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:46:27.205+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_eod_batch_dag.py took 3.536 seconds
+[2025-09-17T05:47:03.974+0000] {processor.py:161} INFO - Started process (PID=1021) to work on /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:47:03.979+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/equities_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:47:03.983+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:47:03.982+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:47:08.877+0000] {processor.py:840} INFO - DAG(s) 'equities_eod_batch_dag' retrieved from /opt/airflow/dags/equities_eod_batch_dag.py
+[2025-09-17T05:47:09.142+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:47:09.138+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:47:09.245+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:47:09.244+0000] {dag.py:3823} INFO - Setting next_dagrun for equities_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:47:09.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/equities_eod_batch_dag.py took 5.411 seconds

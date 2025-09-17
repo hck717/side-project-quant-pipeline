@@ -887,3 +887,52 @@ ModuleNotFoundError: No module named 'scripts.bonds_eod_writer'
 [2025-09-17T05:40:57.251+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:40:57.250+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-09-17T05:40:57.393+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:40:57.392+0000] {dag.py:3823} INFO - Setting next_dagrun for bonds_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
 [2025-09-17T05:40:57.484+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 15.512 seconds
+[2025-09-17T05:42:37.861+0000] {processor.py:161} INFO - Started process (PID=815) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:42:37.866+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:42:37.872+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:42:37.871+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:42:43.433+0000] {processor.py:840} INFO - DAG(s) 'bonds_eod_batch_dag' retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:42:43.608+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:42:43.605+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:42:43.711+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:42:43.710+0000] {dag.py:3823} INFO - Setting next_dagrun for bonds_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:42:43.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 5.984 seconds
+[2025-09-17T05:43:14.139+0000] {processor.py:161} INFO - Started process (PID=845) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:43:14.172+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:43:14.176+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:43:14.175+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:43:26.909+0000] {processor.py:840} INFO - DAG(s) 'bonds_eod_batch_dag' retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:43:27.160+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:43:27.157+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:43:27.303+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:43:27.301+0000] {dag.py:3823} INFO - Setting next_dagrun for bonds_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:43:27.385+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 13.263 seconds
+[2025-09-17T05:43:58.466+0000] {processor.py:161} INFO - Started process (PID=875) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:43:58.473+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:43:58.477+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:43:58.475+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:44:05.864+0000] {processor.py:840} INFO - DAG(s) 'bonds_eod_batch_dag' retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:44:06.222+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:06.217+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:44:06.320+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:06.319+0000] {dag.py:3823} INFO - Setting next_dagrun for bonds_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:44:06.406+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 7.969 seconds
+[2025-09-17T05:44:36.952+0000] {processor.py:161} INFO - Started process (PID=905) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:44:36.962+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:44:36.970+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:36.965+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:44:39.348+0000] {processor.py:840} INFO - DAG(s) 'bonds_eod_batch_dag' retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:44:39.422+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:39.421+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:44:39.486+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:44:39.485+0000] {dag.py:3823} INFO - Setting next_dagrun for bonds_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:44:39.549+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 2.643 seconds
+[2025-09-17T05:45:29.992+0000] {processor.py:161} INFO - Started process (PID=947) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:45:30.004+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:45:30.010+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:45:30.008+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:45:34.515+0000] {processor.py:840} INFO - DAG(s) 'bonds_eod_batch_dag' retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:45:34.582+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:45:34.581+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:45:34.679+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:45:34.678+0000] {dag.py:3823} INFO - Setting next_dagrun for bonds_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:45:34.747+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 4.834 seconds
+[2025-09-17T05:46:14.748+0000] {processor.py:161} INFO - Started process (PID=977) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:46:14.764+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:46:14.786+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:14.775+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:46:23.176+0000] {processor.py:840} INFO - DAG(s) 'bonds_eod_batch_dag' retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:46:23.376+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:23.374+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:46:23.466+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:23.466+0000] {dag.py:3823} INFO - Setting next_dagrun for bonds_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:46:23.534+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 8.831 seconds
+[2025-09-17T05:46:59.151+0000] {processor.py:161} INFO - Started process (PID=1013) to work on /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:46:59.156+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bonds_eod_batch_dag.py for tasks to queue
+[2025-09-17T05:46:59.163+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:46:59.162+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:47:03.106+0000] {processor.py:840} INFO - DAG(s) 'bonds_eod_batch_dag' retrieved from /opt/airflow/dags/bonds_eod_batch_dag.py
+[2025-09-17T05:47:03.360+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:47:03.355+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-17T05:47:03.501+0000] {logging_mixin.py:188} INFO - [2025-09-17T05:47:03.500+0000] {dag.py:3823} INFO - Setting next_dagrun for bonds_eod_batch_dag to 2025-09-17 22:00:00+00:00, run_after=2025-09-18 22:00:00+00:00
+[2025-09-17T05:47:03.612+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bonds_eod_batch_dag.py took 4.501 seconds
