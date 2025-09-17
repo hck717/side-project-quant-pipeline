@@ -1,0 +1,26 @@
+[2025-09-17T05:32:06.070+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crypto_stream_dag.stream_crypto_ticks scheduled__2025-09-17T05:31:00+00:00 [queued]>
+[2025-09-17T05:32:06.107+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crypto_stream_dag.stream_crypto_ticks scheduled__2025-09-17T05:31:00+00:00 [queued]>
+[2025-09-17T05:32:06.108+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-09-17T05:32:06.133+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): stream_crypto_ticks> on 2025-09-17 05:31:00+00:00
+[2025-09-17T05:32:06.194+0000] {standard_task_runner.py:60} INFO - Started process 252 to run task
+[2025-09-17T05:32:06.212+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'crypto_stream_dag', 'stream_crypto_ticks', 'scheduled__2025-09-17T05:31:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/crypto_stream_dag.py', '--cfg-path', '/tmp/tmpnslnitr1']
+[2025-09-17T05:32:06.251+0000] {standard_task_runner.py:88} INFO - Job 6: Subtask stream_crypto_ticks
+[2025-09-17T05:32:06.509+0000] {task_command.py:423} INFO - Running <TaskInstance: crypto_stream_dag.stream_crypto_ticks scheduled__2025-09-17T05:31:00+00:00 [running]> on host 5940dd694332
+[2025-09-17T05:32:06.708+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ho' AIRFLOW_CTX_DAG_ID='crypto_stream_dag' AIRFLOW_CTX_TASK_ID='stream_crypto_ticks' AIRFLOW_CTX_EXECUTION_DATE='2025-09-17T05:31:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-17T05:31:00+00:00'
+[2025-09-17T05:32:09.629+0000] {base.py:126} ERROR - Failed to get ticker 'XRP-USD' reason: Expecting value: line 1 column 1 (char 0)
+[2025-09-17T05:32:09.635+0000] {base.py:126} ERROR - Failed to get ticker 'SOL-USD' reason: Expecting value: line 1 column 1 (char 0)
+[2025-09-17T05:32:09.622+0000] {base.py:126} ERROR - Failed to get ticker 'ADA-USD' reason: Expecting value: line 1 column 1 (char 0)
+[2025-09-17T05:32:09.712+0000] {base.py:126} ERROR - Failed to get ticker 'BTC-USD' reason: Expecting value: line 1 column 1 (char 0)
+[2025-09-17T05:32:09.717+0000] {base.py:126} ERROR - Failed to get ticker 'ETH-USD' reason: Expecting value: line 1 column 1 (char 0)
+[2025-09-17T05:32:18.043+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 5 completed
+[2025-09-17T05:32:18.084+0000] {multi.py:171} ERROR - 
+5 Failed downloads:
+[2025-09-17T05:32:18.098+0000] {multi.py:184} ERROR - ['SOL-USD', 'BTC-USD', 'XRP-USD', 'ETH-USD', 'ADA-USD']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+[2025-09-17T05:32:18.318+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 5 completed
+[2025-09-17T05:32:18.322+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 5 completed
+[2025-09-17T05:32:18.361+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 5 completed
+[2025-09-17T05:32:18.387+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 5 completed
+[2025-09-17T05:32:19.927+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-09-17T05:32:22.257+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=crypto_stream_dag, task_id=stream_crypto_ticks, execution_date=20250917T053100, start_date=20250917T053206, end_date=20250917T053222
+[2025-09-17T05:32:23.312+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-09-17T05:32:23.639+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
