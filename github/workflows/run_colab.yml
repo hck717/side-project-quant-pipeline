@@ -1,29 +1,18 @@
-name: Run Colab Ingestion
+name: Run Colab Scraper
 
 on:
-  repository_dispatch:
-    types: [run_colab]
+  workflow_dispatch:
+    inputs:
+      broker_uri:
+        description: "localhost:9092"
+        required: true
 
 jobs:
   run-colab:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-
-      - name: Install dependencies
-        run: pip install papermill yfinance confluent_kafka minio pyarrow
-
+      - uses: actions/checkout@v4
+      - name: Install Python deps
+        run: pip install papermill yfinance confluent-kafka
       - name: Run notebook
-        run: |
-          papermill yfinance_ingest.ipynb out.ipynb \
-            -p KAFKA_BROKER "${{ github.event.client_payload.kafka_broker }}" \
-            -p MINIO_ENDPOINT "${{ github.event.client_payload.minio_endpoint }}" \
-            -p MINIO_ACCESS_KEY "${{ github.event.client_payload.minio_access }}" \
-            -p MINIO_SECRET_KEY "${{ github.event.client_payload.minio_secret }}" \
-            -p BUCKET "${{ github.event.client_payload.bucket }}"
+        run: papermill colab/colab_scraper.ipynb colab/output.ipynb -p KAFKA_BROKER "${{ github.event.inputs.broker_uri }}"

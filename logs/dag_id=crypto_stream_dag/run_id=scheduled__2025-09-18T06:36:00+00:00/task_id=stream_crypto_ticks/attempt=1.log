@@ -1,0 +1,13 @@
+[2025-09-18T06:37:59.425+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crypto_stream_dag.stream_crypto_ticks scheduled__2025-09-18T06:36:00+00:00 [queued]>
+[2025-09-18T06:37:59.537+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crypto_stream_dag.stream_crypto_ticks scheduled__2025-09-18T06:36:00+00:00 [queued]>
+[2025-09-18T06:37:59.544+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-09-18T06:38:09.816+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): stream_crypto_ticks> on 2025-09-18 06:36:00+00:00
+[2025-09-18T06:38:09.891+0000] {standard_task_runner.py:60} INFO - Started process 419 to run task
+[2025-09-18T06:38:09.947+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'crypto_stream_dag', 'stream_crypto_ticks', 'scheduled__2025-09-18T06:36:00+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/crypto_stream_dag.py', '--cfg-path', '/tmp/tmpd4aqukio']
+[2025-09-18T06:38:09.959+0000] {standard_task_runner.py:88} INFO - Job 14: Subtask stream_crypto_ticks
+[2025-09-18T06:38:10.506+0000] {task_command.py:423} INFO - Running <TaskInstance: crypto_stream_dag.stream_crypto_ticks scheduled__2025-09-18T06:36:00+00:00 [running]> on host 0bf5d1194250
+[2025-09-18T06:38:11.373+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ho' AIRFLOW_CTX_DAG_ID='crypto_stream_dag' AIRFLOW_CTX_TASK_ID='stream_crypto_ticks' AIRFLOW_CTX_EXECUTION_DATE='2025-09-18T06:36:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-18T06:36:00+00:00'
+[2025-09-18T06:43:19.891+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-09-18T06:43:23.676+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=crypto_stream_dag, task_id=stream_crypto_ticks, execution_date=20250918T063600, start_date=20250918T063759, end_date=20250918T064323
+[2025-09-18T06:43:24.501+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-09-18T06:43:24.913+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

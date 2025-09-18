@@ -1,0 +1,22 @@
+[2025-09-18T05:52:34.077+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: equities_intraday_stream_dag.stream_equities_intraday manual__2025-09-18T05:52:27.408167+00:00 [queued]>
+[2025-09-18T05:52:34.096+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: equities_intraday_stream_dag.stream_equities_intraday manual__2025-09-18T05:52:27.408167+00:00 [queued]>
+[2025-09-18T05:52:34.097+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-09-18T05:52:34.126+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): stream_equities_intraday> on 2025-09-18 05:52:27.408167+00:00
+[2025-09-18T05:52:34.171+0000] {standard_task_runner.py:60} INFO - Started process 273 to run task
+[2025-09-18T05:52:34.186+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'equities_intraday_stream_dag', 'stream_equities_intraday', 'manual__2025-09-18T05:52:27.408167+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/equities_intraday_stream_dag.py', '--cfg-path', '/tmp/tmpi93ak19f']
+[2025-09-18T05:52:34.194+0000] {standard_task_runner.py:88} INFO - Job 11: Subtask stream_equities_intraday
+[2025-09-18T05:52:34.768+0000] {task_command.py:423} INFO - Running <TaskInstance: equities_intraday_stream_dag.stream_equities_intraday manual__2025-09-18T05:52:27.408167+00:00 [running]> on host 5940dd694332
+[2025-09-18T05:52:34.949+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ho' AIRFLOW_CTX_DAG_ID='equities_intraday_stream_dag' AIRFLOW_CTX_TASK_ID='stream_equities_intraday' AIRFLOW_CTX_EXECUTION_DATE='2025-09-18T05:52:27.408167+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-18T05:52:27.408167+00:00'
+[2025-09-18T05:52:36.249+0000] {base.py:126} ERROR - Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+[2025-09-18T05:52:36.350+0000] {base.py:126} ERROR - Failed to get ticker 'GOOG' reason: Expecting value: line 1 column 1 (char 0)
+[2025-09-18T05:52:36.369+0000] {base.py:126} ERROR - Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+[2025-09-18T05:52:37.082+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 3 completed
+[2025-09-18T05:52:37.084+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 3 completed
+[2025-09-18T05:52:37.084+0000] {multi.py:171} ERROR - 
+3 Failed downloads:
+[2025-09-18T05:52:37.090+0000] {multi.py:184} ERROR - ['AAPL', 'GOOG', 'MSFT']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+[2025-09-18T05:52:37.082+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 3 completed
+[2025-09-18T05:52:37.214+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-09-18T05:52:37.263+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=equities_intraday_stream_dag, task_id=stream_equities_intraday, execution_date=20250918T055227, start_date=20250918T055234, end_date=20250918T055237
+[2025-09-18T05:52:37.340+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-09-18T05:52:37.444+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

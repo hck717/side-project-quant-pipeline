@@ -1,0 +1,13 @@
+[2025-09-18T06:58:43.002+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: full_pipeline_test_dag.equities_eod_writer_task manual__2025-09-18T06:53:23.235358+00:00 [queued]>
+[2025-09-18T06:58:43.011+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: full_pipeline_test_dag.equities_eod_writer_task manual__2025-09-18T06:53:23.235358+00:00 [queued]>
+[2025-09-18T06:58:43.024+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-09-18T06:58:43.040+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): equities_eod_writer_task> on 2025-09-18 06:53:23.235358+00:00
+[2025-09-18T06:58:43.050+0000] {standard_task_runner.py:60} INFO - Started process 1827 to run task
+[2025-09-18T06:58:43.063+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'full_pipeline_test_dag', 'equities_eod_writer_task', 'manual__2025-09-18T06:53:23.235358+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/full_pipeline_test_dag.py', '--cfg-path', '/tmp/tmp1c8bv65m']
+[2025-09-18T06:58:43.070+0000] {standard_task_runner.py:88} INFO - Job 25: Subtask equities_eod_writer_task
+[2025-09-18T06:58:43.221+0000] {task_command.py:423} INFO - Running <TaskInstance: full_pipeline_test_dag.equities_eod_writer_task manual__2025-09-18T06:53:23.235358+00:00 [running]> on host 0bf5d1194250
+[2025-09-18T06:58:43.371+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ho' AIRFLOW_CTX_DAG_ID='full_pipeline_test_dag' AIRFLOW_CTX_TASK_ID='equities_eod_writer_task' AIRFLOW_CTX_EXECUTION_DATE='2025-09-18T06:53:23.235358+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-18T06:53:23.235358+00:00'
+[2025-09-18T06:58:50.462+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-09-18T06:58:50.502+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=full_pipeline_test_dag, task_id=equities_eod_writer_task, execution_date=20250918T065323, start_date=20250918T065843, end_date=20250918T065850
+[2025-09-18T06:58:50.578+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-09-18T06:58:50.650+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

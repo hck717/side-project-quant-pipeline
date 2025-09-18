@@ -58,6 +58,9 @@ docker compose ps
 docker compose build airflow
 docker compose up -d airflow
 
+# go into airflow container
+docker exec -it airflow /bin/bash
+
 # Check airflow:
 docker compose logs -f airflow
 
@@ -82,4 +85,29 @@ docker compose build flink-jobmanager flink-taskmanager
 Username: hobrian2004_db_user
 Password: W6ONKjcUrUzkiNJG
 
+# install ngrok
+brew install ngrok/ngrok/ngrok
 
+# my ngrok recovery code:
+4KDZRDF8YU
+VHRER2NSNJ
+YUTXK43VW7
+7XRJY772NB
+YRBW2EM5Z7
+V75NV8BSQK
+M83B9ME3R8
+8TSFCWSQN7
+UHWT5JKB5A
+UZ2FRCFH6X
+
+# Authen ngrok
+ngrok config add-authtoken 32sBFDUu6SLfsYAJeXorfYSxG3P_5ZJUACTmBERtzrPWaufCx
+
+# Host Ngrok
+ngrok http http://localhost:8081
+
+# Kill Ngrok
+pkill -f ngrok
+
+# Test exposing Kafka port 9092
+ngrok tcp 9092
