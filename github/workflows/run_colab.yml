@@ -15,4 +15,4 @@ jobs:
       - name: Install Python deps
         run: pip install papermill yfinance confluent-kafka
       - name: Run notebook
-        run: papermill colab/colab_scraper.ipynb colab/output.ipynb -p KAFKA_BROKER "${{ github.event.inputs.broker_uri }}"
+        run: papermill colab_scraper.ipynb colab/output.ipynb -p KAFKA_BROKER "${{ github.event.inputs.broker_uri }}"

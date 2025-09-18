@@ -103,8 +103,6 @@ UZ2FRCFH6X
 # Authen ngrok
 ngrok config add-authtoken 32sBFDUu6SLfsYAJeXorfYSxG3P_5ZJUACTmBERtzrPWaufCx
 
-# Host Ngrok
-ngrok http http://localhost:8081
 
 # Kill Ngrok
 pkill -f ngrok

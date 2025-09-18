@@ -7,7 +7,7 @@ import requests
 import json
 from confluent_kafka import Consumer
 
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = "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"
 REPO = "hck717/side-project-quant-pipeline"
 
 def start_ngrok():
