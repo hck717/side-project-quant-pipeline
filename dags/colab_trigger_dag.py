@@ -5,22 +5,28 @@ from datetime import datetime
 import subprocess
 import requests
 import json
+import time
+import logging
 from confluent_kafka import Consumer
 
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = "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"
 REPO = "hck717/side-project-quant-pipeline"
 
-def start_ngrok():
-    # Start ngrok in background
-    proc = subprocess.Popen(["ngrok", "tcp", "9092"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    import time; time.sleep(3)
-    # Query ngrok API for tunnel info
-    resp = requests.get("http://127.0.0.1:4040/api/tunnels")
-    public_url = resp.json()['tunnels'][0]['public_url'].replace("tcp://", "")
+
+def get_ngrok_tcp():
+    logging.info("🔍 Querying ngrok API for public TCP address...")
+    resp = requests.get("http://ngrok:4040/api/tunnels")  # service name in Docker network
+    resp.raise_for_status()
+    tunnels = resp.json().get("tunnels", [])
+    tcp_tunnels = [t for t in tunnels if t["proto"] == "tcp"]
+    if not tcp_tunnels:
+        raise RuntimeError("No TCP tunnels found in ngrok API response")
+    public_url = tcp_tunnels[0]['public_url'].replace("tcp://", "")
+    logging.info(f"✅ Found ngrok public address: {public_url}")
     return public_url
 
 def trigger_github_actions(ti):
-    broker_uri = ti.xcom_pull(task_ids="start_ngrok")
+    broker_uri = ti.xcom_pull(task_ids="get_ngrok_tcp")
     url = f"https://api.github.com/repos/{REPO}/actions/workflows/run_colab.yml/dispatches"
     headers = {"Authorization": f"token {GITHUB_TOKEN}"}
     data = {"ref": "main", "inputs": {"broker_uri": broker_uri}}
@@ -46,8 +52,8 @@ with DAG(
     catchup=False
 ) as dag:
     t1 = PythonOperator(
-        task_id="start_ngrok",
-        python_callable=start_ngrok
+        task_id="get_ngrok_tcp",
+        python_callable=get_ngrok_tcp
     )
     t2 = PythonOperator(
         task_id="trigger_colab",

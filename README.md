@@ -55,8 +55,11 @@ docker-compose build --no-cache devcontainer
 docker compose ps
 
 # Bring up airflow:
-docker compose build airflow
+docker compose up airflow-init
 docker compose up -d airflow
+docker compose build airflow
+docker compose build airflow-init
+
 
 # go into airflow container
 docker exec -it airflow /bin/bash
@@ -105,6 +108,7 @@ ngrok config add-authtoken 32sBFDUu6SLfsYAJeXorfYSxG3P_5ZJUACTmBERtzrPWaufCx
 
 
 # Kill Ngrok
+docker compose stop ngrok
 pkill -f ngrok
 
 # Test exposing Kafka port 9092
