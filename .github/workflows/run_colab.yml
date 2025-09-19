@@ -1,10 +1,10 @@
-name: Run Colab Notebook
+name: Run Notebook
 
 on:
   workflow_dispatch:
     inputs:
       broker_uri:
-        description: "Kafka broker URI from Airflow/ngrok"
+        description: "Kafka broker URI"
         required: true
 
 jobs:
@@ -12,31 +12,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
 
-      - name: Install colabctl
+      - name: Install dependencies
         run: |
-          pip install colabctl papermill
+          pip install --upgrade pip
+          pip install papermill yfinance confluent-kafka pandas notebook ipykernel
+          python -m ipykernel install --user --name=python3
 
-      - name: Authenticate to Colab
-        env:
-          COLAB_AUTH: ${{ secrets.COLAB_AUTH }}
+      - name: Run notebook with Papermill
         run: |
-          echo "$COLAB_AUTH" > colab_auth.json
-          colabctl auth load colab_auth.json
-
-      - name: Run notebook in Colab
-        run: |
-          colabctl run \
-            --notebook colab_scraper.ipynb \
-            --output colab/output.ipynb \
-            --params KAFKA_BROKER="${{ github.event.inputs.broker_uri }}"
+          papermill colab_scraper.ipynb colab/output.ipynb \
+            -p KAFKA_BROKER "${{ github.event.inputs.broker_uri }}"
 
       - name: Upload executed notebook
         uses: actions/upload-artifact@v4
