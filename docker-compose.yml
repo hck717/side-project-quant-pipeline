@@ -11,6 +11,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
     networks:
       - quantnet
+    
 
   redpanda:
     image: redpandadata/redpanda:v23.3.5

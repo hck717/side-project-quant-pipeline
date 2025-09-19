@@ -20,17 +20,23 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install dependencies and register kernel
+      - name: Install colabctl
         run: |
-          pip install --upgrade pip
-          pip install papermill notebook ipykernel
-          python -m ipykernel install --user --name=python3
-          jupyter kernelspec list
+          pip install colabctl papermill
 
-      - name: Run notebook with Papermill
+      - name: Authenticate to Colab
+        env:
+          COLAB_AUTH: ${{ secrets.COLAB_AUTH }}
         run: |
-          papermill colab_scraper.ipynb colab/output.ipynb \
-            -p KAFKA_BROKER "${{ github.event.inputs.broker_uri }}"
+          echo "$COLAB_AUTH" > colab_auth.json
+          colabctl auth load colab_auth.json
+
+      - name: Run notebook in Colab
+        run: |
+          colabctl run \
+            --notebook colab_scraper.ipynb \
+            --output colab/output.ipynb \
+            --params KAFKA_BROKER="${{ github.event.inputs.broker_uri }}"
 
       - name: Upload executed notebook
         uses: actions/upload-artifact@v4
