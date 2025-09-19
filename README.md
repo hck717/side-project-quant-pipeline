@@ -49,7 +49,7 @@ docker-compose up -d
 **remarks: ensure Redpanada image to be: image: redpandadata/redpanda:v23.3.5 or latest 
 
 # Rebuild  docker: 
-docker-compose build --no-cache devcontainer
+docker compose down -v --remove-orphans
 
 # Check services
 docker compose ps
@@ -63,6 +63,8 @@ docker compose build airflow-init
 
 # go into airflow container
 docker exec -it airflow /bin/bash
+docker compose run --entrypoint bash airflow
+
 
 # Check airflow:
 docker compose logs -f airflow

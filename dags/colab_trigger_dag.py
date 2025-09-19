@@ -9,7 +9,7 @@ import time
 import logging
 from confluent_kafka import Consumer
 
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = "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"
 REPO = "hck717/side-project-quant-pipeline"
 
 
