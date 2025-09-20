@@ -1,0 +1,2 @@
+parameters:
+  KAFKA_BROKER: '0.tcp.ap.ngrok.io:10432'
