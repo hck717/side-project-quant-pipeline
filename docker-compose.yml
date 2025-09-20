@@ -146,6 +146,23 @@ services:
     networks:
       - quantnet
 
+  init-topics:
+    image: redpandadata/redpanda:v23.3.5
+    depends_on:
+      - redpanda
+    entrypoint: /bin/bash
+    command: >
+      -c "
+      echo 'Waiting for Redpanda to be ready...' &&
+      sleep 5 &&
+      rpk topic create equities_ticks --brokers=redpanda:9092 --partitions 1 --replicas 1 &&
+      rpk topic create crypto_ticks   --brokers=redpanda:9092 --partitions 1 --replicas 1 &&
+      rpk topic create bonds_data     --brokers=redpanda:9092 --partitions 1 --replicas 1 &&
+      echo 'Topics created successfully'
+      "
+    networks:
+      - quantnet
+
 volumes:
   postgres_data:
   minio_data:

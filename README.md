@@ -115,21 +115,23 @@ python /opt/airflow/scripts/equities_intraday_producer.py
 python /opt/airflow/scripts/all_tickers_scraper.py
 
 
-# *** Reference fixing yfinance rate limit --> need VPN 
+# *** Reference fixing yfinance rate limit --> need VPN / yfinance version > 2.58
 https://blog.csdn.net/weixin_43252521/article/details/148328355
 
 
 # *** check for yfinance rate limit
 curl -v https://query1.finance.yahoo.com/v8/finance/chart/AAPL
 
+# Check that logging is working in your scripts
+docker compose run --entrypoint bash airflow
+python -u /opt/airflow/scripts/crypto_producer.py
 
+# Check that the Kafka topics exist
+docker exec -it side-project-quant-pipeline-redpanda-1 rpk topic list --brokers=redpanda:9092
 
-# create Kafka Topics once
-docker compose exec redpanda rpk topic create crypto.ticks \
-  --partitions 2 --replicas 1 --config retention.ms=3600000
-
-docker compose exec redpanda rpk topic create equities.intraday \
-  --partitions 2 --replicas 1 --config retention.ms=3600000
+# check if the Kafka topics received data ingestion
+docker exec -it side-project-quant-pipeline-redpanda-1 \
+  rpk topic consume crypto_ticks --brokers=redpanda:9092 --num 5
 
 # Build PyFlink
 docker compose build flink-jobmanager flink-taskmanager
