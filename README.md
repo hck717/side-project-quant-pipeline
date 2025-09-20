@@ -75,6 +75,55 @@ docker compose exec redpanda rpk topic consume crypto.ticks -n 5
 # Restart airflow
 docker compose restart airflow
 
+# 1. List your running containers to confirm the Airflow service name
+docker ps
+
+# 2. Exec into the Airflow container (replace 'airflow' if your container name differs)
+docker compose run --entrypoint bash airflow
+
+# 3. Inside the container, trigger each DAG manually, one at a time:
+airflow dags trigger bonds_eod_batch_dag
+airflow dags trigger crypto_stream_dag
+airflow dags trigger equities_eod_batch_dag
+airflow dags trigger equities_intraday_stream_dag
+airflow dags trigger full_pipeline_test_dag
+airflow dags test bonds_eod_batch_dag 2025-09-20
+
+
+# 4. (Optional) Watch task logs for a DAG run
+airflow tasks logs bonds_eod_batch_dag batch_bonds_eod <run_id>
+
+# 1. Get into the Airflow container shell
+docker exec -it airflow bash
+docker compose run --entrypoint bash airflow
+
+# 2. Inside the container, run each scraper one by one:
+
+# Bonds EOD → MinIO
+python -u /opt/airflow/scripts/bonds_eod_writer.py
+
+# Crypto intraday → Kafka
+python -u /opt/airflow/scripts/crypto_producer.py
+
+# Equities EOD → MinIO
+python /opt/airflow/scripts/equities_eod_writer.py
+
+# Equities intraday → Kafka
+python /opt/airflow/scripts/equities_intraday_producer.py
+
+# All tickers combined → MinIO + Kafka
+python /opt/airflow/scripts/all_tickers_scraper.py
+
+
+# *** Reference fixing yfinance rate limit --> need VPN 
+https://blog.csdn.net/weixin_43252521/article/details/148328355
+
+
+# *** check for yfinance rate limit
+curl -v https://query1.finance.yahoo.com/v8/finance/chart/AAPL
+
+
+
 # create Kafka Topics once
 docker compose exec redpanda rpk topic create crypto.ticks \
   --partitions 2 --replicas 1 --config retention.ms=3600000
