@@ -8,6 +8,7 @@ from scripts.bonds_eod_writer import run_bonds_eod_writer
 from scripts.crypto_producer import run_crypto_tick_producer
 from scripts.equities_eod_writer import run_equities_eod_writer
 from scripts.equities_intraday_producer import run_equities_intraday_producer
+from scripts.all_tickers_scraper import run_all_tickers_scraper
 
 default_args = {"owner": "ho", "retries": 0}
 
@@ -34,5 +35,9 @@ with DAG(
         task_id="stream_equities_intraday",
         python_callable=run_equities_intraday_producer
     )
+    all_tickers_task = PythonOperator(
+        task_id="scrape_all_tickers",
+        python_callable=run_all_tickers_scraper
+    )
     # Dependencies: Run all tasks in parallel
-    [bonds_task, equities_eod_task, crypto_task, equities_intraday_task]
+    [bonds_task, equities_eod_task, crypto_task, equities_intraday_task, all_tickers_task]
