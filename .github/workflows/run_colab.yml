@@ -6,6 +6,7 @@ on:
       broker_uri:
         description: "Kafka broker URI"
         required: true
+        default: "0.tcp.ap.ngrok.io:10432"
 
 jobs:
   run-notebook:
@@ -22,14 +23,18 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install papermill yfinance confluent-kafka pandas notebook ipykernel || exit 1
+          pip install papermill yfinance confluent-kafka pandas notebook ipykernel
           python -m ipykernel install --user --name=python3
 
+      - name: List repository files
+        run: find . -type f
+
       - name: Run notebook with Papermill
+        env:
+          KAFKA_BROKER: ${{ github.event.inputs.broker_uri }}
         run: |
           mkdir -p colab
           papermill colab_scraper.ipynb colab/output.ipynb \
-            -p KAFKA_BROKER "${{ github.event.inputs.broker_uri }}" \
             --kernel python3 \
             --log-output --log-level DEBUG
         continue-on-error: false
