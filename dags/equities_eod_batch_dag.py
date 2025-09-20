@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/opt/airflow')
+sys.path.append('/opt/airflow/scripts')
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
@@ -15,7 +15,6 @@ with DAG(
     schedule_interval="0 22 * * *",  # daily at 10 PM
     catchup=False,
 ) as dag:
-
     batch_equities_eod = PythonOperator(
         task_id="batch_equities_eod",
         python_callable=run_equities_eod_writer

@@ -1,53 +1,39 @@
-import os
-import time
-import requests
+import yfinance as yf
 import json
-from datetime import datetime
-import pandas as pd
 from confluent_kafka import Producer
+from datetime import datetime
+from tenacity import retry, stop_after_attempt, wait_fixed
 
 KAFKA_BROKER = "redpanda:9092"
 TOPIC = "equities.intraday"
 EQUITY_SYMBOLS = ["AAPL", "MSFT", "AMZN", "TSLA", "NVDA"]
 
-API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
-BASE_URL = "https://www.alphavantage.co/query"
+@retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
+def fetch_intraday_data(symbol):
+    ticker = yf.Ticker(symbol)
+    df = ticker.history(period="1d", interval="5m")
+    if df.empty:
+        raise ValueError(f"No data for {symbol}")
+    return df.iloc[-1:]  # Return only the latest row
 
 def run_equities_intraday_producer():
     p = Producer({'bootstrap.servers': KAFKA_BROKER})
     for sym in EQUITY_SYMBOLS:
-        params = {
-            "function": "TIME_SERIES_INTRADAY",
-            "symbol": sym,
-            "interval": "5min",
-            "outputsize": "compact",
-            "apikey": API_KEY
-        }
-        r = requests.get(BASE_URL, params=params)
-        r.raise_for_status()
-        data = r.json()
-        ts_key = "Time Series (5min)"
-        if ts_key not in data:
-            continue
-        df = pd.DataFrame.from_dict(data[ts_key], orient="index").astype(float)
-        df.index = pd.to_datetime(df.index)
-        latest_ts = df.index.max()
-        latest_row = df.loc[[latest_ts]]
-        # 👇 Debug print for Airflow logs
-        print(f"[SCRAPE DEBUG] {sym} latest data: {latest_row.to_dict(orient='records')}")
-
-        for idx, row in latest_row.iterrows():
+        try:
+            df = fetch_intraday_data(sym)
+            latest_row = df.iloc[-1]
             msg = {
                 "symbol": sym,
-                "timestamp": idx.isoformat(),
-                "open": row["1. open"],
-                "high": row["2. high"],
-                "low": row["3. low"],
-                "close": row["4. close"],
-                "volume": row["5. volume"],
+                "timestamp": latest_row.name.isoformat(),
+                "open": float(latest_row["Open"]),
+                "high": float(latest_row["High"]),
+                "low": float(latest_row["Low"]),
+                "close": float(latest_row["Close"]),
+                "volume": float(latest_row["Volume"]),
                 "ingested_at": datetime.utcnow().isoformat()
             }
+            print(f"[SCRAPE DEBUG] {sym} latest data: {msg}")
             p.produce(TOPIC, json.dumps(msg).encode('utf-8'))
-        time.sleep(12)
-    p.flush()
+        except Exception as e:
+            print(f"[SCRAPE ERROR] {sym} failed: {str(e)}")
 

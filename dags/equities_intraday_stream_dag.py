@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/opt/airflow')
+sys.path.append('/opt/airflow/scripts')
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
@@ -15,7 +15,6 @@ with DAG(
     schedule_interval="*/5 * * * *",  # every 5 minutes
     catchup=False,
 ) as dag:
-
     stream_equities_intraday = PythonOperator(
         task_id="stream_equities_intraday",
         python_callable=run_equities_intraday_producer

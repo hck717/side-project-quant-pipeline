@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/opt/airflow')
+sys.path.append('/opt/airflow/scripts')
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
@@ -15,7 +15,6 @@ with DAG(
     schedule_interval="* * * * *",  # every minute
     catchup=False,
 ) as dag:
-
     stream_crypto = PythonOperator(
         task_id="stream_crypto_ticks",
         python_callable=run_crypto_tick_producer

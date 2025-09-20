@@ -11,7 +11,6 @@ services:
       - postgres_data:/var/lib/postgresql/data
     networks:
       - quantnet
-    
 
   redpanda:
     image: redpandadata/redpanda:v23.3.5
@@ -57,8 +56,10 @@ services:
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - PYTHONPATH=/opt/airflow:/opt/airflow/scripts
     volumes:
       - ./dags:/opt/airflow/dags
+      - ./scripts:/opt/airflow/scripts
       - ./requirements-airflow.txt:/requirements-airflow.txt
     depends_on:
       - postgres
@@ -72,8 +73,10 @@ services:
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - PYTHONPATH=/opt/airflow:/opt/airflow/scripts
     volumes:
       - ./dags:/opt/airflow/dags
+      - ./scripts:/opt/airflow/scripts
       - ./requirements-airflow.txt:/requirements-airflow.txt
     ports:
       - "8080:8080"
@@ -81,7 +84,6 @@ services:
       - postgres
       - redpanda
       - minio
-      - ngrok
     command:
       - bash
       - -c
@@ -126,19 +128,6 @@ services:
       - |
         pip install --no-cache-dir -r /requirements-flink.txt || true
         /docker-entrypoint.sh taskmanager
-    networks:
-      - quantnet
-
-  ngrok:
-    image: ngrok/ngrok:latest
-    platform: linux/arm64
-    command: tcp redpanda:9092
-    environment:
-      NGROK_AUTHTOKEN: 32sBFDUu6SLfsYAJeXorfYSxG3P_5ZJUACTmBERtzrPWaufCx
-    ports:
-      - "4040:4040"
-    depends_on:
-      - redpanda
     networks:
       - quantnet
 
