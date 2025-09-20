@@ -30,7 +30,9 @@ jobs:
           mkdir -p colab
           papermill colab_scraper.ipynb colab/output.ipynb \
             -p KAFKA_BROKER "${{ github.event.inputs.broker_uri }}" \
-            --kernel python3
+            --kernel python3 \
+            --log-output --log-level DEBUG
+        continue-on-error: false
 
       - name: Upload executed notebook
         uses: actions/upload-artifact@v4
