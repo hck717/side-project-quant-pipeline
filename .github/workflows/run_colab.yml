@@ -22,13 +22,15 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install papermill yfinance confluent-kafka pandas notebook ipykernel
+          pip install papermill yfinance confluent-kafka pandas notebook ipykernel || exit 1
           python -m ipykernel install --user --name=python3
 
       - name: Run notebook with Papermill
         run: |
+          mkdir -p colab
           papermill colab_scraper.ipynb colab/output.ipynb \
-            -p KAFKA_BROKER "${{ github.event.inputs.broker_uri }}"
+            -p KAFKA_BROKER "${{ github.event.inputs.broker_uri }}" \
+            --kernel python3
 
       - name: Upload executed notebook
         uses: actions/upload-artifact@v4

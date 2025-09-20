@@ -2,7 +2,8 @@ yfinance==0.2.43
 pandas==2.2.2
 numpy>=1.22.4
 pyarrow
-confluent-kafka
 minio
 python-dateutil
-requests
+apache-airflow==2.8.1
+confluent_kafka==2.5.3
+requests==2.31.0
