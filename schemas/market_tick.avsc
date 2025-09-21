@@ -1,0 +1,37 @@
+{
+  "type": "record",
+  "name": "MarketTick",
+  "namespace": "quant.pipeline",
+  "fields": [
+    {"name": "symbol", "type": "string"},
+    {"name": "timestamp", "type": "long", "doc": "event time millis since epoch"},
+    {"name": "ingested_at", "type": ["null","long"], "default": null},
+
+    {"name": "open", "type": "double"},
+    {"name": "high", "type": "double"},
+    {"name": "low", "type": "double"},
+    {"name": "close", "type": "double"},
+    {"name": "adj_close", "type": ["null","double"], "default": null},
+    {"name": "volume", "type": "double"},
+
+    {"name": "sma_20", "type": ["null","double"], "default": null},
+    {"name": "ema_12", "type": ["null","double"], "default": null},
+    {"name": "ema_26", "type": ["null","double"], "default": null},
+    {"name": "macd", "type": ["null","double"], "default": null},
+    {"name": "macd_signal_9", "type": ["null","double"], "default": null},
+    {"name": "macd_hist", "type": ["null","double"], "default": null},
+
+    {"name": "rsi_14", "type": ["null","double"], "default": null},
+    {"name": "boll_mid_20", "type": ["null","double"], "default": null},
+    {"name": "boll_upper_20", "type": ["null","double"], "default": null},
+    {"name": "boll_lower_20", "type": ["null","double"], "default": null},
+
+    {"name": "atr_14", "type": ["null","double"], "default": null},
+    {"name": "obv", "type": ["null","double"], "default": null},
+    {"name": "vwap_session", "type": ["null","double"], "default": null},
+
+    {"name": "log_return", "type": ["null","double"], "default": null},
+    {"name": "cum_return", "type": ["null","double"], "default": null}
+  ]
+}
+

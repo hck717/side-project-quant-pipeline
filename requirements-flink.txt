@@ -4,3 +4,4 @@ apache-flink==1.17.1
 numpy==1.21.6
 pandas==1.5.3
 pyarrow
+fastavro==1.9.4

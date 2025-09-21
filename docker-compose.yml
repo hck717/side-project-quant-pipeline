@@ -118,12 +118,19 @@ services:
       - "8082:8081"
     volumes:
       - ./requirements-flink.txt:/requirements-flink.txt
+      - ./scripts:/opt/flink/app/scripts
+      - ./schemas:/opt/flink/app/schemas
+      - ./flink/conf:/opt/flink/conf
+      - ./flink/lib:/opt/flink/lib
     entrypoint: /bin/bash
     command:
       - -c
       - |
         pip install --no-cache-dir -r /requirements-flink.txt || true
         /docker-entrypoint.sh jobmanager
+    depends_on:
+      - redpanda
+      - minio
     networks:
       - quantnet
 
@@ -137,6 +144,10 @@ services:
       - flink-jobmanager
     volumes:
       - ./requirements-flink.txt:/requirements-flink.txt
+      - ./scripts:/opt/flink/app/scripts
+      - ./schemas:/opt/flink/app/schemas
+      - ./flink/conf:/opt/flink/conf
+      - ./flink/lib:/opt/flink/lib
     entrypoint: /bin/bash
     command:
       - -c
@@ -145,6 +156,7 @@ services:
         /docker-entrypoint.sh taskmanager
     networks:
       - quantnet
+
 
   init-topics:
     image: redpandadata/redpanda:v23.3.5
