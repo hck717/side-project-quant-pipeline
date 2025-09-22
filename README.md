@@ -132,7 +132,22 @@ docker exec -it $(docker ps -q --filter "name=minio") sh -lc \
 # Or open MinIO UI: http://localhost:9001 (user=minio, pass=minio123)
 ```
 
+# *** librdkafka for confluent.kafka
+brew install librdkafka
 
+# Install the new requirements for sprint2: 
+pip install -r scripts/requirements-processing.txt
+
+# Start MongoDB in docker-compose:
+docker-compose up -d mongodb
+
+# run stream process
+cd scripts/processing
+python stream_processor.pydocker-compose up -d mongodb
+
+# run batch processing
+cd scripts/processing
+python batch_processor.py --asset-type all
 
 
 # my ngrok recovery code:
