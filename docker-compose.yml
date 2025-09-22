@@ -124,9 +124,20 @@ services:
     networks:
       - quantnet
 
+  mongodb:
+    image: mongo:6.0
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - quantnet
+
 volumes:
   postgres_data:
   minio_data:
+  mongodb_data:
 
 networks:
   quantnet:
