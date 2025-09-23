@@ -134,6 +134,45 @@ services:
     networks:
       - quantnet
 
+  stream-processor:
+    build:
+      context: .
+      dockerfile: Dockerfile.processor
+    volumes:
+      - ./scripts:/app/scripts
+    environment:
+      - KAFKA_BOOTSTRAP_SERVERS=redpanda:9092
+      - MONGO_URI=mongodb://mongodb:27017/
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ACCESS_KEY=minio
+      - MINIO_SECRET_KEY=minio123
+    depends_on:
+      - redpanda
+      - mongodb
+      - minio
+    networks:
+      - quantnet
+
+  batch-processor:
+    build:
+      context: .
+      dockerfile: Dockerfile.processor
+    volumes:
+      - ./scripts:/app/scripts
+    environment:
+      - KAFKA_BOOTSTRAP_SERVERS=redpanda:9092
+      - MONGO_URI=mongodb://mongodb:27017/
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ACCESS_KEY=minio
+      - MINIO_SECRET_KEY=minio123
+    depends_on:
+      - redpanda
+      - mongodb
+      - minio
+    command: python scripts/processing/batch_processor.py --asset-type all
+    networks:
+      - quantnet
+
 volumes:
   postgres_data:
   minio_data:

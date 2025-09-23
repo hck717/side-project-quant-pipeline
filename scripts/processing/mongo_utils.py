@@ -7,6 +7,7 @@ from pymongo import MongoClient, IndexModel
 from pymongo.errors import PyMongoError
 import motor.motor_asyncio
 from datetime import datetime
+import os
 
 # Configure logging
 logging.basicConfig(level=logging.INFO,
@@ -14,7 +15,7 @@ logging.basicConfig(level=logging.INFO,
 logger = logging.getLogger(__name__)
 
 # MongoDB connection parameters
-MONGO_URI = "mongodb://localhost:27017/"
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://mongodb:27017/")
 MONGO_DB = "quant"
 MONGO_COLLECTION_MARKET_DATA = "market_data"
 

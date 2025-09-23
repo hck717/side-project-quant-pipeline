@@ -20,15 +20,19 @@ from tenacity import retry, stop_after_attempt, wait_fixed
 from ta_utils import calculate_ta_metrics, market_tick_to_dict
 from mongo_utils import get_mongo_client, insert_market_data, setup_mongo_collections
 
+# Configuration from environment variables with defaults
+KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "redpanda:9092")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://mongodb:27017/")
+MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "minio:9000")
+MINIO_ACCESS_KEY = os.getenv("MINIO_ACCESS_KEY", "minio")
+MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY", "minio123")
+
 # Configure logging
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 # Configuration
-MINIO_ENDPOINT = "minio:9000"
-MINIO_ACCESS_KEY = "minio"
-MINIO_SECRET_KEY = "minio123"
 MINIO_SECURE = False
 MINIO_BUCKET = "quant"
 

@@ -141,13 +141,20 @@ pip install -r scripts/requirements-processing.txt
 # Start MongoDB in docker-compose:
 docker-compose up -d mongodb
 
-# run stream process
-cd scripts/processing
-python stream_processor.pydocker-compose up -d mongodb
+# Build the images
+docker compose build stream-processor batch-processor
 
-# run batch processing
-cd scripts/processing
-python batch_processor.py --asset-type all
+# Start MongoDB, Redpanda, and MinIO if they're not running
+docker compose up -d mongodb redpanda minio
+
+# Run the stream processor
+docker compose up stream-processor
+
+# Run the batch processor
+docker compose run --rm batch-processor
+
+# if needed -- Process specific date and asset type
+docker compose run --rm batch-processor python scripts/processing/batch_processor.py --date 2025-09-23 --asset-type equities
 
 
 # my ngrok recovery code:

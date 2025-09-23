@@ -14,6 +14,7 @@ from typing import Dict, Any, List, Set
 from datetime import datetime, timezone
 import pandas as pd
 import traceback
+import os
 
 from aiokafka import AIOKafkaConsumer
 import motor.motor_asyncio
@@ -26,10 +27,14 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Configuration
-KAFKA_BOOTSTRAP_SERVERS = "redpanda:9092"
+# Configuration from environment variables with defaults
+KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "redpanda:9092")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://mongodb:27017/")
+MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "minio:9000")
+MINIO_ACCESS_KEY = os.getenv("MINIO_ACCESS_KEY", "minio")
+MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY", "minio123")
+
 KAFKA_TOPICS = ["crypto_ticks", "equities_ticks", "bonds_data"]
-MONGO_URI = "mongodb://localhost:27017/"
 MONGO_DB = "quant"
 MONGO_COLLECTION = "market_data"
 

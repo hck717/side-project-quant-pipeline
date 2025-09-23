@@ -4,7 +4,8 @@ numpy>=1.22.4
 ta>=0.11.0
 
 # Kafka streaming
-aiokafka==0.8.1
+kafka-python==2.0.2
+aiokafka==0.12.0
 confluent-kafka
 
 # MinIO (S3) access

@@ -1,0 +1,16 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Copy requirements and install dependencies first for better caching
+COPY scripts/requirements-processing.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+# Copy the application code
+COPY scripts/ /app/scripts/
+
+# Set the working directory to scripts directory
+WORKDIR /app
+
+# Command is specified in docker-compose.yml
+CMD ["python", "scripts/processing/stream_processor.py"]
