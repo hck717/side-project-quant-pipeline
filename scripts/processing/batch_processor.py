@@ -19,6 +19,7 @@ from tenacity import retry, stop_after_attempt, wait_fixed
 
 from ta_utils import calculate_ta_metrics, market_tick_to_dict
 from mongo_utils import get_mongo_client, insert_market_data, setup_mongo_collections
+from collections import defaultdict
 
 # Configuration from environment variables with defaults
 KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "redpanda:9092")
@@ -113,41 +114,29 @@ def extract_symbol_from_path(path):
     return symbol
 
 def process_object(minio_client, mongo_client, bucket, object_name):
-    """
-    Process a single object from MinIO.
-    
-    Args:
-        minio_client: MinIO client
-        mongo_client: MongoDB client
-        bucket: Bucket name
-        object_name: Object name (path in bucket)
-        
-    Returns:
-        Number of records processed
-    """
+    """Process a single object from MinIO."""
     try:
-        # Read the Parquet file
         df = read_parquet_from_minio(minio_client, bucket, object_name)
-        
-        # Extract symbol from path
         symbol = extract_symbol_from_path(object_name)
-        
-        # Calculate technical analysis metrics
         df_enriched = calculate_ta_metrics(df, symbol)
-        
-        # Insert each row into MongoDB
-        success_count = 0
+
+        # Group by symbol
+        grouped_data = defaultdict(list)
         for _, row in df_enriched.iterrows():
             mongo_doc = market_tick_to_dict(row)
             mongo_doc['processor_type'] = 'batch'
             mongo_doc['source_object'] = object_name
-            
-            if insert_market_data(mongo_client, mongo_doc):
-                success_count += 1
-        
+            grouped_data[symbol].append(mongo_doc)
+
+        # Insert all documents for each symbol
+        success_count = 0
+        for symbol, data_list in grouped_data.items():
+            for data in data_list:
+                if insert_market_data(mongo_client, data):
+                    success_count += 1
+
         logger.info(f"Processed {success_count}/{len(df_enriched)} rows from {object_name}")
         return success_count
-        
     except Exception as e:
         logger.error(f"Error processing object {object_name}: {e}")
         logger.error(traceback.format_exc())
@@ -173,9 +162,9 @@ def process_batch(date_str=None, asset_type=None):
     
     # Determine prefixes based on asset type
     prefixes = []
-    if asset_type == 'equities' or asset_type == 'all':
+    if (asset_type == 'equities' or asset_type == 'all'):
         prefixes.append('eod/equities/')
-    if asset_type == 'bonds' or asset_type == 'all':
+    if (asset_type == 'bonds' or asset_type == 'all'):
         prefixes.append('eod/bonds/')
     if not prefixes:
         logger.error(f"Invalid asset type: {asset_type}")
@@ -185,8 +174,6 @@ def process_batch(date_str=None, asset_type=None):
     minio_client = get_minio_client()
     mongo_client = get_mongo_client()
     
-    # Setup MongoDB collections and indexes
-    setup_mongo_collections(mongo_client)
     
     total_processed = 0
     total_objects = 0

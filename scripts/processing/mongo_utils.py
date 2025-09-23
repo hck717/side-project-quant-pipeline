@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 # MongoDB connection parameters
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://mongodb:27017/")
 MONGO_DB = "quant"
-MONGO_COLLECTION_MARKET_DATA = "market_data"
+MONGO_COLLECTION_MARKET_DATA = "consolidated_data"  # Changed to consolidated_data
 
 def get_mongo_client() -> MongoClient:
     """Create and return a MongoDB client."""

@@ -23,4 +23,5 @@ aiohttp>=3.9.1
 python-dateutil>=2.8.2
 tenacity<9,>=8.5.0
 pyarrow>=14.0.1
+tabulate  # Add this line
 

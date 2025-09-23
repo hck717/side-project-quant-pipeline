@@ -173,6 +173,24 @@ services:
     networks:
       - quantnet
 
+  mongo-tools:
+    build:
+      context: .
+      dockerfile: Dockerfile.processor
+    volumes:
+      - ./scripts:/app/scripts
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/
+    depends_on:
+      - mongodb
+    command: >
+      bash -c "
+        python scripts/processing/mongo_index_manager.py --verify --analyze &&
+        python scripts/processing/query_benchmark.py
+      "
+    networks:
+      - quantnet
+
 volumes:
   postgres_data:
   minio_data:
